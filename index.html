@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We would like your feedback on our services<p>
+
+    <form id="survey-form" action="">
+        <label for="name-label">Name <input id="name-label" type="text" placeholder="Enter Your Name" required></label>
+        
+        <label for="email-label">Email <input id="email-label" type="email" placeholder="Enter Your Email" required></label>
+
+        <label for="number-label">Number <input id="number-label" type="number" min="5" max="15" placeholder="555-05795" required></label>
+    
+        <label for="dropdown" id="opt1"><b>Select item</b>
+            <select id="dropdown" name="month">
+                <option value="Item1">Item 1</option>
+                <option value="Item2">Item 2</option>
+                <option value="Item3">Item 3</option>
+                <option value="Item4">Item 4</option>
+            </select>
+        </label>
+        <br>
+        <br>
+    
+        <label for="color"><b>Colors:</b>
+            <label for="no1"><input id="color" type="radio"  value="red" name="color-options" id="no1"> Red</label>
+            <label for="no2"><input id="color" type="radio"  value="blue" name="color-options" id="no2"> Blue</label>
+            <label for="no3"><input id="color" type="radio"  value="silva" name="color-options" id="no3"> Silver</label>
+            <label for="no4"><input id="color" type="radio"  value="white" name="color-options" id="no4"> White</label>
+        </label>
+    
+        <label for="check"><b>Features:</b>
+            <label for="box1"><input id="box1" type="checkbox" name="feature" value="auto" class="check"> Auto</label>
+            <label for="box2"><input id="box2" type="checkbox" name="feature" value="manual" class="check"> Manual</label>
+            <label for="box3"><input id="box3" type="checkbox" name="feature" value="Used" class="check"> Used</label>
+            <label for="box4"><input id="box4" type="checkbox" name="feature" value="import" class="check"> Import</label>
+        </label>
+    
+        <label for="text"><b>Addtional comments:</b>
+            <textarea id="text" name="response" placeholder="We would love to hear from you..." row="5" cols="40"></textarea>
+        </label>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
